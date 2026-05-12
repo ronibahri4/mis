@@ -10,6 +10,10 @@ Frappe + React application scaffold for the Made in Syria (MIS) B2B marketplace.
 - Desk page scaffolds for supplier verification, Category/CMS management, and platform analytics.
 - `mis/mis/portal_routes.json` documenting implemented URL coverage by portal.
 
+## Page file coverage
+
+The frontend now includes one dedicated source file for each requested plan page under `frontend/src/pages/`, plus `frontend/src/pages/index.js` as the central registry imported by `frontend/src/main.jsx`. The files are numbered `01_...jsx` through `31_...jsx` to map directly to the product plan.
+
 ## Development
 
 ```bash
