@@ -1,0 +1,82 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Resource",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "resource_title",
+      "fieldtype": "Data",
+      "label": "Resource Title",
+      "idx": 1
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "idx": 2
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "label": "Category",
+      "idx": 3,
+      "options": "Guides\nIndustry Insights\nTrade Tips\nTools & Templates"
+    },
+    {
+      "fieldname": "cover_image",
+      "fieldtype": "Attach Image",
+      "label": "Cover Image",
+      "idx": 4
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description",
+      "idx": 5
+    },
+    {
+      "fieldname": "content",
+      "fieldtype": "Text Editor",
+      "label": "Content",
+      "idx": 6
+    },
+    {
+      "fieldname": "download_file",
+      "fieldtype": "Attach",
+      "label": "Download File",
+      "idx": 7
+    },
+    {
+      "fieldname": "featured",
+      "fieldtype": "Check",
+      "label": "Featured",
+      "idx": 8
+    },
+    {
+      "fieldname": "published",
+      "fieldtype": "Check",
+      "label": "Published",
+      "idx": 9
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

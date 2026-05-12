@@ -1,0 +1,121 @@
+{
+  "doctype": "DocType",
+  "name": "MIS RFQ",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "rfq_title",
+      "fieldtype": "Data",
+      "label": "RFQ Title",
+      "idx": 1
+    },
+    {
+      "fieldname": "buyer",
+      "fieldtype": "Link",
+      "label": "Buyer",
+      "idx": 2,
+      "options": "MIS Buyer Profile"
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Link",
+      "label": "Category",
+      "idx": 3,
+      "options": "MIS Category"
+    },
+    {
+      "fieldname": "sub_category",
+      "fieldtype": "Link",
+      "label": "Sub Category",
+      "idx": 4,
+      "options": "MIS Category"
+    },
+    {
+      "fieldname": "quantity_type",
+      "fieldtype": "Data",
+      "label": "Quantity Type",
+      "idx": 5
+    },
+    {
+      "fieldname": "required_quantity",
+      "fieldtype": "Float",
+      "label": "Required Quantity",
+      "idx": 6
+    },
+    {
+      "fieldname": "unit",
+      "fieldtype": "Data",
+      "label": "Unit",
+      "idx": 7
+    },
+    {
+      "fieldname": "target_price",
+      "fieldtype": "Currency",
+      "label": "Target Price",
+      "idx": 8
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Data",
+      "label": "Currency",
+      "idx": 9
+    },
+    {
+      "fieldname": "delivery_location",
+      "fieldtype": "Data",
+      "label": "Delivery Location",
+      "idx": 10
+    },
+    {
+      "fieldname": "required_delivery_date",
+      "fieldtype": "Date",
+      "label": "Required Delivery Date",
+      "idx": 11
+    },
+    {
+      "fieldname": "product_description",
+      "fieldtype": "Text",
+      "label": "Product Description",
+      "idx": 12
+    },
+    {
+      "fieldname": "business_details",
+      "fieldtype": "Long Text",
+      "label": "Business Details",
+      "idx": 13
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "idx": 14,
+      "options": "Draft\nOpen\nQuotes Received\nIn Negotiation\nClosed"
+    },
+    {
+      "fieldname": "attachments",
+      "fieldtype": "Attach",
+      "label": "Attachments",
+      "idx": 15
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

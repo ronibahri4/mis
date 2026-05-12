@@ -1,0 +1,8 @@
+{
+  "doctype": "Page",
+  "name": "MIS Verification",
+  "module": "MIS",
+  "title": "Supplier Verification Queue",
+  "page_name": "mis_verification",
+  "standard": "Yes"
+}

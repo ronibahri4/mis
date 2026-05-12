@@ -1,0 +1,168 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Product",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "product_title",
+      "fieldtype": "Data",
+      "label": "Product Title",
+      "idx": 1
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "idx": 2
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 3,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Link",
+      "label": "Category",
+      "idx": 4,
+      "options": "MIS Category"
+    },
+    {
+      "fieldname": "sub_category",
+      "fieldtype": "Link",
+      "label": "Sub Category",
+      "idx": 5,
+      "options": "MIS Category"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description",
+      "idx": 6
+    },
+    {
+      "fieldname": "main_image",
+      "fieldtype": "Attach Image",
+      "label": "Main Image",
+      "idx": 7
+    },
+    {
+      "fieldname": "material",
+      "fieldtype": "Data",
+      "label": "Material",
+      "idx": 8
+    },
+    {
+      "fieldname": "standard",
+      "fieldtype": "Data",
+      "label": "Standard",
+      "idx": 9
+    },
+    {
+      "fieldname": "grade",
+      "fieldtype": "Data",
+      "label": "Grade",
+      "idx": 10
+    },
+    {
+      "fieldname": "diameter",
+      "fieldtype": "Data",
+      "label": "Diameter",
+      "idx": 11
+    },
+    {
+      "fieldname": "length",
+      "fieldtype": "Data",
+      "label": "Length",
+      "idx": 12
+    },
+    {
+      "fieldname": "surface",
+      "fieldtype": "Data",
+      "label": "Surface",
+      "idx": 13
+    },
+    {
+      "fieldname": "usage",
+      "fieldtype": "Small Text",
+      "label": "Usage",
+      "idx": 14
+    },
+    {
+      "fieldname": "country_of_origin",
+      "fieldtype": "Data",
+      "label": "Country of Origin",
+      "idx": 15
+    },
+    {
+      "fieldname": "brochure",
+      "fieldtype": "Attach",
+      "label": "Brochure",
+      "idx": 16
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "idx": 17
+    },
+    {
+      "fieldname": "views",
+      "fieldtype": "Int",
+      "label": "Views",
+      "idx": 18
+    },
+    {
+      "fieldname": "image_gallery",
+      "fieldtype": "Long Text",
+      "label": "Image Gallery",
+      "idx": 19
+    },
+    {
+      "fieldname": "specifications",
+      "fieldtype": "Long Text",
+      "label": "Specifications",
+      "idx": 20
+    },
+    {
+      "fieldname": "applications",
+      "fieldtype": "Text",
+      "label": "Applications",
+      "idx": 21
+    },
+    {
+      "fieldname": "packaging_delivery",
+      "fieldtype": "Text",
+      "label": "Packaging & Delivery",
+      "idx": 22
+    },
+    {
+      "fieldname": "faq",
+      "fieldtype": "Long Text",
+      "label": "FAQ",
+      "idx": 23
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

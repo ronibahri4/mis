@@ -1,0 +1,103 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Quotation",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "rfq",
+      "fieldtype": "Link",
+      "label": "RFQ",
+      "idx": 1,
+      "options": "MIS RFQ"
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 2,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "buyer",
+      "fieldtype": "Link",
+      "label": "Buyer",
+      "idx": 3,
+      "options": "MIS Buyer Profile"
+    },
+    {
+      "fieldname": "unit_price",
+      "fieldtype": "Currency",
+      "label": "Unit Price",
+      "idx": 4
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Data",
+      "label": "Currency",
+      "idx": 5
+    },
+    {
+      "fieldname": "total",
+      "fieldtype": "Currency",
+      "label": "Total",
+      "idx": 6
+    },
+    {
+      "fieldname": "quantity",
+      "fieldtype": "Float",
+      "label": "Quantity",
+      "idx": 7
+    },
+    {
+      "fieldname": "lead_time_days",
+      "fieldtype": "Int",
+      "label": "Lead Time Days",
+      "idx": 8
+    },
+    {
+      "fieldname": "validity_days",
+      "fieldtype": "Int",
+      "label": "Validity Days",
+      "idx": 9
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text",
+      "label": "Notes",
+      "idx": 10
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "idx": 11,
+      "options": "Draft\nSubmitted\nAccepted\nRejected\nExpired"
+    },
+    {
+      "fieldname": "attachments",
+      "fieldtype": "Attach",
+      "label": "Attachments",
+      "idx": 12
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
