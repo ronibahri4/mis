@@ -1,0 +1,66 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Supplier Subscription",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 1,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "plan",
+      "fieldtype": "Link",
+      "label": "Plan",
+      "idx": 2,
+      "options": "MIS Subscription Plan"
+    },
+    {
+      "fieldname": "starts_on",
+      "fieldtype": "Date",
+      "label": "Starts On",
+      "idx": 3
+    },
+    {
+      "fieldname": "expires_on",
+      "fieldtype": "Date",
+      "label": "Expires On",
+      "idx": 4
+    },
+    {
+      "fieldname": "auto_renew",
+      "fieldtype": "Check",
+      "label": "Auto Renew",
+      "idx": 5
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "idx": 6,
+      "options": "Active\nExpired\nCancelled"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

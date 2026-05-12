@@ -1,0 +1,179 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Supplier Profile",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "company_name",
+      "fieldtype": "Data",
+      "label": "Company Name",
+      "idx": 1
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "idx": 2
+    },
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "idx": 3,
+      "options": "User"
+    },
+    {
+      "fieldname": "industry",
+      "fieldtype": "Link",
+      "label": "Industry",
+      "idx": 4,
+      "options": "MIS Industry"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location",
+      "idx": 5
+    },
+    {
+      "fieldname": "logo",
+      "fieldtype": "Attach Image",
+      "label": "Logo",
+      "idx": 6
+    },
+    {
+      "fieldname": "cover_image",
+      "fieldtype": "Attach Image",
+      "label": "Cover Image",
+      "idx": 7
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description",
+      "idx": 8
+    },
+    {
+      "fieldname": "established_year",
+      "fieldtype": "Int",
+      "label": "Established Year",
+      "idx": 9
+    },
+    {
+      "fieldname": "employee_count",
+      "fieldtype": "Data",
+      "label": "Employee Count",
+      "idx": 10
+    },
+    {
+      "fieldname": "years_experience",
+      "fieldtype": "Int",
+      "label": "Years Experience",
+      "idx": 11
+    },
+    {
+      "fieldname": "export_countries",
+      "fieldtype": "Int",
+      "label": "Export Countries",
+      "idx": 12
+    },
+    {
+      "fieldname": "rating",
+      "fieldtype": "Float",
+      "label": "Rating",
+      "idx": 13
+    },
+    {
+      "fieldname": "verified",
+      "fieldtype": "Check",
+      "label": "Verified",
+      "idx": 14
+    },
+    {
+      "fieldname": "export_ready",
+      "fieldtype": "Check",
+      "label": "Export Ready",
+      "idx": 15
+    },
+    {
+      "fieldname": "response_time",
+      "fieldtype": "Data",
+      "label": "Response Time",
+      "idx": 16
+    },
+    {
+      "fieldname": "certifications",
+      "fieldtype": "Small Text",
+      "label": "Certifications",
+      "idx": 17
+    },
+    {
+      "fieldname": "export_markets",
+      "fieldtype": "Small Text",
+      "label": "Export Markets",
+      "idx": 18
+    },
+    {
+      "fieldname": "profile_strength",
+      "fieldtype": "Percent",
+      "label": "Profile Strength",
+      "idx": 19
+    },
+    {
+      "fieldname": "production_capacity",
+      "fieldtype": "Small Text",
+      "label": "Production Capacity",
+      "idx": 20
+    },
+    {
+      "fieldname": "equipment_list",
+      "fieldtype": "Long Text",
+      "label": "Equipment List",
+      "idx": 21
+    },
+    {
+      "fieldname": "moq",
+      "fieldtype": "Data",
+      "label": "MOQ",
+      "idx": 22
+    },
+    {
+      "fieldname": "factory_video_url",
+      "fieldtype": "Data",
+      "label": "Factory Video URL",
+      "idx": 23
+    },
+    {
+      "fieldname": "contact_persons",
+      "fieldtype": "Long Text",
+      "label": "Contact Persons",
+      "idx": 24
+    },
+    {
+      "fieldname": "on_time_delivery",
+      "fieldtype": "Percent",
+      "label": "On-time Delivery",
+      "idx": 25
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

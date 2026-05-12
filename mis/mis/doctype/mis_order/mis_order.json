@@ -1,0 +1,106 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Order",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "order_id",
+      "fieldtype": "Data",
+      "label": "Order ID",
+      "idx": 1
+    },
+    {
+      "fieldname": "buyer",
+      "fieldtype": "Link",
+      "label": "Buyer",
+      "idx": 2,
+      "options": "MIS Buyer Profile"
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 3,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "product",
+      "fieldtype": "Link",
+      "label": "Product",
+      "idx": 4,
+      "options": "MIS Product"
+    },
+    {
+      "fieldname": "rfq",
+      "fieldtype": "Link",
+      "label": "RFQ",
+      "idx": 5,
+      "options": "MIS RFQ"
+    },
+    {
+      "fieldname": "quotation",
+      "fieldtype": "Link",
+      "label": "Quotation",
+      "idx": 6,
+      "options": "MIS Quotation"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "idx": 7
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Data",
+      "label": "Currency",
+      "idx": 8
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "idx": 9,
+      "options": "In Production\nShipped\nDelivered\nCompleted\nCancelled"
+    },
+    {
+      "fieldname": "tracking_number",
+      "fieldtype": "Data",
+      "label": "Tracking Number",
+      "idx": 10
+    },
+    {
+      "fieldname": "carrier",
+      "fieldtype": "Data",
+      "label": "Carrier",
+      "idx": 11
+    },
+    {
+      "fieldname": "payment_status",
+      "fieldtype": "Select",
+      "label": "Payment Status",
+      "idx": 12,
+      "options": "Unpaid\nPartially Paid\nPaid"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

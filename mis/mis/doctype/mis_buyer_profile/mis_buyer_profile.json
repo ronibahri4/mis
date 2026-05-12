@@ -1,0 +1,107 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Buyer Profile",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "full_name",
+      "fieldtype": "Data",
+      "label": "Full Name",
+      "idx": 1
+    },
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "idx": 2,
+      "options": "User"
+    },
+    {
+      "fieldname": "company_name",
+      "fieldtype": "Data",
+      "label": "Company Name",
+      "idx": 3
+    },
+    {
+      "fieldname": "country",
+      "fieldtype": "Data",
+      "label": "Country",
+      "idx": 4
+    },
+    {
+      "fieldname": "industry",
+      "fieldtype": "Link",
+      "label": "Industry",
+      "idx": 5,
+      "options": "MIS Industry"
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone",
+      "idx": 6
+    },
+    {
+      "fieldname": "website",
+      "fieldtype": "Data",
+      "label": "Website",
+      "idx": 7
+    },
+    {
+      "fieldname": "preferred_language",
+      "fieldtype": "Data",
+      "label": "Preferred Language",
+      "idx": 8
+    },
+    {
+      "fieldname": "preferred_currency",
+      "fieldtype": "Data",
+      "label": "Preferred Currency",
+      "idx": 9
+    },
+    {
+      "fieldname": "saved_searches",
+      "fieldtype": "Long Text",
+      "label": "Saved Searches",
+      "idx": 10
+    },
+    {
+      "fieldname": "saved_suppliers",
+      "fieldtype": "Long Text",
+      "label": "Saved Suppliers",
+      "idx": 11
+    },
+    {
+      "fieldname": "favorite_products",
+      "fieldtype": "Long Text",
+      "label": "Favorite Products",
+      "idx": 12
+    },
+    {
+      "fieldname": "notification_preferences",
+      "fieldtype": "Long Text",
+      "label": "Notification Preferences",
+      "idx": 13
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

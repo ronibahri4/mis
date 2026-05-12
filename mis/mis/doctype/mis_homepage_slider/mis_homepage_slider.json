@@ -1,0 +1,81 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Homepage Slider",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "idx": 1
+    },
+    {
+      "fieldname": "subtitle",
+      "fieldtype": "Small Text",
+      "label": "Subtitle",
+      "idx": 2
+    },
+    {
+      "fieldname": "background_image",
+      "fieldtype": "Attach Image",
+      "label": "Background Image",
+      "idx": 3
+    },
+    {
+      "fieldname": "primary_cta_label",
+      "fieldtype": "Data",
+      "label": "Primary CTA Label",
+      "idx": 4
+    },
+    {
+      "fieldname": "primary_cta_url",
+      "fieldtype": "Data",
+      "label": "Primary CTA URL",
+      "idx": 5
+    },
+    {
+      "fieldname": "secondary_cta_label",
+      "fieldtype": "Data",
+      "label": "Secondary CTA Label",
+      "idx": 6
+    },
+    {
+      "fieldname": "secondary_cta_url",
+      "fieldtype": "Data",
+      "label": "Secondary CTA URL",
+      "idx": 7
+    },
+    {
+      "fieldname": "sort_order",
+      "fieldtype": "Int",
+      "label": "Sort Order",
+      "idx": 8
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "idx": 9
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

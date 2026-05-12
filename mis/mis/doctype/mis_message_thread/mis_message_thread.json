@@ -1,0 +1,72 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Message Thread",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "subject",
+      "fieldtype": "Data",
+      "label": "Subject",
+      "idx": 1
+    },
+    {
+      "fieldname": "buyer",
+      "fieldtype": "Link",
+      "label": "Buyer",
+      "idx": 2,
+      "options": "MIS Buyer Profile"
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 3,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "rfq",
+      "fieldtype": "Link",
+      "label": "RFQ",
+      "idx": 4,
+      "options": "MIS RFQ"
+    },
+    {
+      "fieldname": "last_message",
+      "fieldtype": "Small Text",
+      "label": "Last Message",
+      "idx": 5
+    },
+    {
+      "fieldname": "last_message_on",
+      "fieldtype": "Datetime",
+      "label": "Last Message On",
+      "idx": 6
+    },
+    {
+      "fieldname": "unread_count",
+      "fieldtype": "Int",
+      "label": "Unread Count",
+      "idx": 7
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
