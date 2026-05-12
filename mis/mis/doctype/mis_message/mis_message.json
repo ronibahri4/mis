@@ -1,0 +1,59 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Message",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "thread",
+      "fieldtype": "Link",
+      "label": "Thread",
+      "idx": 1,
+      "options": "MIS Message Thread"
+    },
+    {
+      "fieldname": "sender",
+      "fieldtype": "Link",
+      "label": "Sender",
+      "idx": 2,
+      "options": "User"
+    },
+    {
+      "fieldname": "message",
+      "fieldtype": "Text",
+      "label": "Message",
+      "idx": 3
+    },
+    {
+      "fieldname": "attachment",
+      "fieldtype": "Attach",
+      "label": "Attachment",
+      "idx": 4
+    },
+    {
+      "fieldname": "read",
+      "fieldtype": "Check",
+      "label": "Read",
+      "idx": 5
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

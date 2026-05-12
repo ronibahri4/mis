@@ -1,0 +1,72 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Review",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 1,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "product",
+      "fieldtype": "Link",
+      "label": "Product",
+      "idx": 2,
+      "options": "MIS Product"
+    },
+    {
+      "fieldname": "buyer",
+      "fieldtype": "Link",
+      "label": "Buyer",
+      "idx": 3,
+      "options": "MIS Buyer Profile"
+    },
+    {
+      "fieldname": "rating",
+      "fieldtype": "Rating",
+      "label": "Rating",
+      "idx": 4
+    },
+    {
+      "fieldname": "review_title",
+      "fieldtype": "Data",
+      "label": "Review Title",
+      "idx": 5
+    },
+    {
+      "fieldname": "review",
+      "fieldtype": "Text",
+      "label": "Review",
+      "idx": 6
+    },
+    {
+      "fieldname": "is_published",
+      "fieldtype": "Check",
+      "label": "Published",
+      "idx": 7
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,64 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Subscription Plan",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "plan_name",
+      "fieldtype": "Data",
+      "label": "Plan Name",
+      "idx": 1
+    },
+    {
+      "fieldname": "price",
+      "fieldtype": "Currency",
+      "label": "Price",
+      "idx": 2
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Data",
+      "label": "Currency",
+      "idx": 3
+    },
+    {
+      "fieldname": "billing_interval",
+      "fieldtype": "Select",
+      "label": "Billing Interval",
+      "idx": 4,
+      "options": "Monthly\nYearly"
+    },
+    {
+      "fieldname": "features",
+      "fieldtype": "Long Text",
+      "label": "Features",
+      "idx": 5
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "idx": 6
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

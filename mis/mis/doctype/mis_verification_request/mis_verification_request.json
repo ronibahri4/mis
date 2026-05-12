@@ -1,0 +1,66 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Verification Request",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "idx": 1,
+      "options": "MIS Supplier Profile"
+    },
+    {
+      "fieldname": "submitted_documents",
+      "fieldtype": "Attach",
+      "label": "Submitted Documents",
+      "idx": 2
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "idx": 3,
+      "options": "Pending\nApproved\nRejected"
+    },
+    {
+      "fieldname": "review_notes",
+      "fieldtype": "Text",
+      "label": "Review Notes",
+      "idx": 4
+    },
+    {
+      "fieldname": "reviewed_by",
+      "fieldtype": "Link",
+      "label": "Reviewed By",
+      "idx": 5,
+      "options": "User"
+    },
+    {
+      "fieldname": "reviewed_on",
+      "fieldtype": "Datetime",
+      "label": "Reviewed On",
+      "idx": 6
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

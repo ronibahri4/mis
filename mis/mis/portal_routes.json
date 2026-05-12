@@ -1,0 +1,43 @@
+{
+  "public": [
+    "/",
+    "/search",
+    "/industries",
+    "/suppliers",
+    "/suppliers/[slug]",
+    "/products/[slug]",
+    "/about",
+    "/contact",
+    "/resources"
+  ],
+  "auth": [
+    "/login",
+    "/register/buyer",
+    "/register/supplier"
+  ],
+  "buyer": [
+    "/buyer/dashboard",
+    "/buyer/rfq/new",
+    "/buyer/rfqs",
+    "/buyer/rfqs/[id]",
+    "/buyer/orders",
+    "/buyer/messages",
+    "/buyer/favorites",
+    "/buyer/settings"
+  ],
+  "supplier": [
+    "/supplier/dashboard",
+    "/supplier/products",
+    "/supplier/rfqs",
+    "/supplier/orders",
+    "/supplier/messages",
+    "/supplier/analytics",
+    "/supplier/profile",
+    "/supplier/subscription"
+  ],
+  "desk": [
+    "/desk#mis-verification",
+    "Category & CMS Management",
+    "Platform Analytics"
+  ]
+}

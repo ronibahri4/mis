@@ -1,0 +1,71 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Category",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "category_name",
+      "fieldtype": "Data",
+      "label": "Category Name",
+      "idx": 1
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "idx": 2
+    },
+    {
+      "fieldname": "parent_category",
+      "fieldtype": "Link",
+      "label": "Parent Category",
+      "idx": 3,
+      "options": "MIS Category"
+    },
+    {
+      "fieldname": "industry",
+      "fieldtype": "Link",
+      "label": "Industry",
+      "idx": 4,
+      "options": "MIS Industry"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description",
+      "idx": 5
+    },
+    {
+      "fieldname": "image",
+      "fieldtype": "Attach Image",
+      "label": "Image",
+      "idx": 6
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "idx": 7
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,75 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Industry",
+  "module": "MIS",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "format:{#####}",
+  "fields": [
+    {
+      "fieldname": "industry_name",
+      "fieldtype": "Data",
+      "label": "Industry Name",
+      "idx": 1
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "idx": 2
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description",
+      "idx": 3
+    },
+    {
+      "fieldname": "cover_image",
+      "fieldtype": "Attach Image",
+      "label": "Cover Image",
+      "idx": 4
+    },
+    {
+      "fieldname": "icon",
+      "fieldtype": "Attach Image",
+      "label": "Icon",
+      "idx": 5
+    },
+    {
+      "fieldname": "supplier_count",
+      "fieldtype": "Int",
+      "label": "Supplier Count",
+      "idx": 6
+    },
+    {
+      "fieldname": "sort_order",
+      "fieldtype": "Int",
+      "label": "Sort Order",
+      "idx": 7
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "idx": 8
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Website Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
